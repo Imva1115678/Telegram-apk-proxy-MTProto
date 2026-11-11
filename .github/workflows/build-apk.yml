@@ -1,0 +1,114 @@
+name: Собрать APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+    paths:
+      - 'main.py'
+      - 'ui.kv'
+      - 'app/**'
+      - 'assets/**'
+      - 'buildozer.spec'
+      - '.github/workflows/build-apk.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-apk
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 90
+    steps:
+      - name: Код
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Системные пакеты
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git zip unzip autoconf automake libtool libltdl-dev pkg-config zlib1g-dev libncurses-dev cmake libffi-dev libssl-dev build-essential ccache
+
+      - name: Buildozer
+        run: pip install "buildozer==1.5.0" "cython==0.29.36" setuptools cryptography certifi
+
+      - name: Кэш Android SDK и NDK
+        uses: actions/cache@v4
+        with:
+          path: ~/.buildozer
+          key: buildozer-home-${{ hashFiles('buildozer.spec') }}
+          restore-keys: |
+            buildozer-home-
+
+      - name: Кэш собранных библиотек
+        uses: actions/cache@v4
+        with:
+          path: .buildozer
+          key: buildozer-build-${{ hashFiles('buildozer.spec') }}
+
+      - name: Ключ подписи (один и тот же, чтобы обновления ставились поверх)
+        uses: actions/cache@v4
+        with:
+          path: ~/.android/debug.keystore
+          key: android-debug-keystore-v1
+
+      - name: Создать ключ подписи, если его ещё нет
+        run: |
+          mkdir -p ~/.android
+          if [ ! -f ~/.android/debug.keystore ]; then
+            keytool -genkeypair -keystore ~/.android/debug.keystore -storepass android \
+              -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 \
+              -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+          fi
+
+      - name: Адрес репозитория для приложения
+        run: echo "REPO = \"${GITHUB_REPOSITORY}\"" > app/build_config.py
+
+      - name: Свежий проверенный список внутрь APK (для первого запуска)
+        run: |
+          git fetch --depth=1 origin proxies:refs/remotes/origin/proxies || true
+          git show origin/proxies:proxies.json > prev.json 2>/dev/null || echo '{}' > prev.json
+          python tools/collect.py --out data/proxies.json --prev prev.json --max 800 || echo "Не получилось — приложение скачает список само"
+
+      - name: Номер версии
+        run: sed -i "s/^version = .*/version = 1.0.${{ github.run_number }}/" buildozer.spec
+
+      - name: Сборка APK (первый раз 30–40 минут, потом быстрее)
+        run: yes | buildozer -v android debug
+
+      - name: Готовый файл
+        run: |
+          mkdir -p out
+          cp "$(ls -t bin/*.apk | head -n 1)" out/FamilyProxy.apk
+          URL="https://github.com/$GITHUB_REPOSITORY/releases/latest/download/FamilyProxy.apk"
+          printf '%s\n\n%s\n%s\n' 'Скачайте FamilyProxy.apk на телефон и откройте его.' 'Постоянная ссылка на последнюю версию:' "$URL" > out/release.md
+          ls -la out
+
+      - name: Сохранить как артефакт
+        uses: actions/upload-artifact@v4
+        with:
+          name: FamilyProxy-apk
+          path: out/FamilyProxy.apk
+
+      - name: Выложить в Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.${{ github.run_number }}
+          name: ТГ Прокси 1.0.${{ github.run_number }}
+          body_path: out/release.md
+          files: out/FamilyProxy.apk
+          make_latest: true
