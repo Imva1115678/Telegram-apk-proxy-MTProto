@@ -1,0 +1,60 @@
+name: Обновить список прокси
+
+on:
+  schedule:
+    - cron: '17 */3 * * *'     # каждые 3 часа
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-proxies
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Код
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Библиотеки
+        run: pip install cryptography certifi
+
+      - name: Прошлый список
+        run: |
+          git fetch --depth=1 origin proxies:refs/remotes/origin/proxies || true
+          git show origin/proxies:proxies.json > prev.json 2>/dev/null || echo '{}' > prev.json
+
+      - name: Собрать и проверить прокси
+        run: python tools/collect.py --out out/proxies.json --report out/README.md --prev prev.json
+
+      - name: Опубликовать в ветку proxies
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ ! -f out/proxies.json ]; then
+            echo "Рабочих прокси не нашлось — старый список оставляем как есть"
+            exit 0
+          fi
+          cd out
+          git init -q
+          git checkout -q -b proxies
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add proxies.json README.md
+          git commit -q -m "Список прокси: $(date -u '+%Y-%m-%d %H:%M') UTC"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" proxies
+
+      - name: Не дать ключу подписи APK устареть в кэше
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/.android/debug.keystore
+          key: android-debug-keystore-v1
