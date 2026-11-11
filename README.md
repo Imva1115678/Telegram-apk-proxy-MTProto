@@ -4,7 +4,7 @@
 
 ## ⬇️ Скачать
 
-### 👉 [Скачать FamilyProxy.apk (последняя версия)](https://github.com/lmva1115678/Telegram-apk-proxy-MTProto/releases/latest/download/FamilyProxy.apk)
+### 👉 [Скачать FamilyProxy.apk (последняя версия)]([https://github.com/lmva1115678/Telegram-apk-proxy-MTProto/releases/latest/download/FamilyProxy.apk](https://github.com/Imva1115678/Telegram-apk-proxy-MTProto/releases/latest/download/FamilyProxy.apk))
 
 Другой способ: на главной странице репозитория справа нажмите **Releases** и скачайте файл **FamilyProxy.apk** из последнего релиза. Новые версии появляются там же.
 
