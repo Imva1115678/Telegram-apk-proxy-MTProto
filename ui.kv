@@ -1,0 +1,414 @@
+#:kivy 2.0
+#:import dp kivy.metrics.dp
+#:import theme app.theme
+#:import SlideTransition kivy.uix.screenmanager.SlideTransition
+#:import ScrollEffect kivy.effects.scroll.ScrollEffect
+
+# Внешний вид приложения «ТГ Прокси». Логика — в main.py, цвета — в app/theme.py.
+
+
+# ---------- общие элементы ----------
+
+<StatusDot>:
+    size_hint: None, None
+    size: dp(9), dp(9)
+    canvas:
+        Color:
+            rgba: self.color
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+<BlueButton>:
+    color: theme.WHITE
+    bold: True
+    font_size: '15sp'
+    radius: dp(10)
+    canvas.before:
+        Color:
+            rgba: theme.BLUE_DOWN if self.state == 'down' else theme.BLUE
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [self.radius]
+
+<OutlineButton>:
+    color: theme.BLUE
+    bold: True
+    font_size: '15sp'
+    radius: dp(10)
+    canvas.before:
+        Color:
+            rgba: theme.BLUE_LIGHT if self.state == 'down' else theme.BG
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [self.radius]
+        Color:
+            rgba: theme.BLUE
+        Line:
+            width: dp(1)
+            rounded_rectangle: self.x + dp(1), self.y + dp(1), self.width - dp(2), self.height - dp(2), max(1, self.radius - dp(1))
+
+<TextButton>:
+    color: theme.BLUE
+    disabled_color: self.color
+    bold: True
+    font_size: '15sp'
+    opacity: 0.55 if (self.state == 'down' or self.disabled) else 1
+
+<BackButton>:
+    canvas:
+        Color:
+            rgba: theme.BAR_PRESSED if self.state == 'down' else theme.CLEAR
+        Ellipse:
+            pos: self.center_x - dp(20), self.center_y - dp(20)
+            size: dp(40), dp(40)
+        Color:
+            rgba: theme.BAR_TEXT
+        Line:
+            points: self.center_x + dp(4), self.center_y + dp(8), self.center_x - dp(4), self.center_y, self.center_x + dp(4), self.center_y - dp(8)
+            width: dp(1.5)
+            cap: 'round'
+            joint: 'round'
+
+<TopBar@BoxLayout>:
+    size_hint_y: None
+    height: dp(56)
+    canvas.before:
+        Color:
+            rgba: theme.BAR
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<BarTitle@Label>:
+    color: theme.BAR_TEXT
+    bold: True
+    font_size: '19sp'
+    halign: 'left'
+    valign: 'middle'
+    text_size: self.size
+    shorten: True
+    shorten_from: 'right'
+
+<BarButton@TextButton>:
+    color: theme.BAR_TEXT
+    size_hint_x: None
+    width: self.texture_size[0] + dp(28)
+
+<HintLabel@Label>:
+    color: theme.HINT
+    font_size: '14sp'
+    size_hint_y: None
+    text_size: self.width, None
+    height: self.texture_size[1]
+    halign: 'left'
+
+<ProgressLine>:
+    canvas:
+        Color:
+            rgba: theme.BLUE_LIGHT if self.active else theme.CLEAR
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        Color:
+            rgba: theme.BLUE if self.active else theme.CLEAR
+        Rectangle:
+            pos: (self.x - self.width * 0.3 + self.width * 1.3 * self.shift, self.y) if self.value < 0 else self.pos
+            size: (self.width * 0.3, self.height) if self.value < 0 else (self.width * max(0.02, min(1.0, self.value)), self.height)
+
+<Toast>:
+    size_hint: None, None
+    size: self.texture_size[0] + dp(32), self.texture_size[1] + dp(22)
+    color: theme.WHITE
+    font_size: '14sp'
+    canvas.before:
+        Color:
+            rgba: theme.TOAST_BG
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [dp(10)]
+
+
+# ---------- главный экран: список ----------
+
+<ProxyRow>:
+    size_hint_y: None
+    height: dp(72)
+    padding: dp(16), 0, dp(12), 0
+    spacing: dp(12)
+    on_release: app.open_detail(root.pkey)
+    canvas.before:
+        Color:
+            rgba: theme.PRESSED if self.state == 'down' else theme.BG
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        Color:
+            rgba: theme.DIVIDER
+        Rectangle:
+            pos: self.x + dp(16), self.y
+            size: self.width - dp(16), dp(1)
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 0, dp(13)
+        spacing: dp(3)
+        Label:
+            text: root.title
+            color: theme.TEXT
+            bold: True
+            font_size: '16sp'
+            halign: 'left'
+            valign: 'middle'
+            text_size: self.size
+            shorten: True
+            shorten_from: 'right'
+        BoxLayout:
+            spacing: dp(7)
+            StatusDot:
+                color: theme.tone_dot(root.tone)
+                pos_hint: {'center_y': 0.5}
+            Label:
+                text: root.status
+                color: theme.tone_text(root.tone)
+                font_size: '14sp'
+                halign: 'left'
+                valign: 'middle'
+                text_size: self.size
+                shorten: True
+                shorten_from: 'right'
+    BlueButton:
+        text: 'Подключить'
+        font_size: '14sp'
+        size_hint: None, None
+        size: dp(122), dp(38)
+        radius: dp(19)
+        pos_hint: {'center_y': 0.5}
+        on_release: app.connect(root.pkey)
+
+<ProxyList>:
+    viewclass: 'ProxyRow'
+    effect_cls: ScrollEffect
+    bar_width: dp(3)
+    bar_color: theme.SCROLLBAR
+    bar_inactive_color: theme.SCROLLBAR_IDLE
+    RecycleBoxLayout:
+        orientation: 'vertical'
+        default_size: None, dp(72)
+        default_size_hint: 1, None
+        size_hint_y: None
+        height: self.minimum_height
+
+<ListScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        canvas.before:
+            Color:
+                rgba: theme.BG
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        TopBar:
+            padding: dp(16), 0, dp(4), 0
+            BarTitle:
+                text: 'Прокси для Telegram'
+            BarButton:
+                text: 'Обновить'
+                on_release: app.refresh()
+        BoxLayout:
+            size_hint_y: None
+            height: dp(38)
+            padding: dp(16), 0
+            canvas.before:
+                Color:
+                    rgba: theme.STRIP
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            Label:
+                text: root.line
+                color: theme.HINT
+                font_size: '14sp'
+                halign: 'left'
+                valign: 'middle'
+                text_size: self.size
+                shorten: True
+                shorten_from: 'right'
+        ProgressLine:
+            size_hint_y: None
+            height: dp(2)
+            active: root.busy
+            value: root.progress
+        FloatLayout:
+            ProxyList:
+                id: rv
+                pos_hint: {'x': 0, 'y': 0}
+            Label:
+                text: root.empty
+                opacity: 1 if root.empty else 0
+                color: theme.HINT
+                font_size: '16sp'
+                halign: 'center'
+                valign: 'middle'
+                text_size: self.width - dp(64), None
+                pos_hint: {'x': 0, 'y': 0}
+
+
+# ---------- экран прокси: сервер, порт, ключ ----------
+
+<CopyField>:
+    orientation: 'vertical'
+    size_hint_y: None
+    height: self.minimum_height
+    padding: dp(14), dp(10), dp(14), dp(12)
+    spacing: dp(4)
+    canvas.before:
+        Color:
+            rgba: theme.BLUE_LIGHT if (self.copied or self.state == 'down') else theme.FIELD_BG
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [dp(10)]
+        Color:
+            rgba: theme.BLUE if (self.copied or self.state == 'down') else theme.FIELD_LINE
+        Line:
+            width: dp(1.5) if self.copied else dp(1)
+            rounded_rectangle: self.x + dp(1), self.y + dp(1), self.width - dp(2), self.height - dp(2), dp(9)
+    BoxLayout:
+        size_hint_y: None
+        height: dp(20)
+        Label:
+            text: root.caption
+            color: theme.HINT
+            font_size: '14sp'
+            halign: 'left'
+            valign: 'middle'
+            text_size: self.size
+        Label:
+            text: 'Скопировано' if root.copied else 'Копировать'
+            color: theme.BLUE
+            bold: True
+            font_size: '14sp'
+            halign: 'right'
+            valign: 'middle'
+            text_size: self.size
+    Label:
+        text: root.display or root.value
+        font_name: app.mono_font
+        color: theme.TEXT
+        font_size: '17sp'
+        size_hint_y: None
+        text_size: self.width, None
+        height: self.texture_size[1]
+        halign: 'left'
+
+<DetailScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        canvas.before:
+            Color:
+                rgba: theme.BG
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        TopBar:
+            padding: dp(4), 0, dp(16), 0
+            spacing: dp(4)
+            BackButton:
+                size_hint_x: None
+                width: dp(52)
+                on_release: app.go_back()
+            BarTitle:
+                text: root.title
+        ScrollView:
+            id: scroll
+            do_scroll_x: False
+            effect_cls: ScrollEffect
+            bar_width: dp(3)
+            bar_color: theme.SCROLLBAR
+            bar_inactive_color: theme.SCROLLBAR_IDLE
+            BoxLayout:
+                orientation: 'vertical'
+                size_hint_y: None
+                height: self.minimum_height
+                padding: dp(16), dp(18), dp(16), dp(28)
+                spacing: dp(12)
+                BoxLayout:
+                    size_hint_y: None
+                    height: dp(26)
+                    spacing: dp(8)
+                    StatusDot:
+                        color: theme.tone_dot(root.tone)
+                        pos_hint: {'center_y': 0.5}
+                    Label:
+                        text: root.status
+                        color: theme.tone_text(root.tone)
+                        bold: True
+                        font_size: '17sp'
+                        halign: 'left'
+                        valign: 'middle'
+                        text_size: self.size
+                        shorten: True
+                        shorten_from: 'right'
+                HintLabel:
+                    text: root.meta
+                Widget:
+                    size_hint_y: None
+                    height: dp(2)
+                HintLabel:
+                    text: 'Нажмите на поле, чтобы скопировать'
+                CopyField:
+                    caption: 'Сервер'
+                    value: root.server
+                CopyField:
+                    caption: 'Порт'
+                    value: root.port
+                CopyField:
+                    caption: 'Ключ'
+                    value: root.secret
+                    display: root.secret_display
+                Widget:
+                    size_hint_y: None
+                    height: dp(6)
+                BlueButton:
+                    text: 'Подключить в Telegram'
+                    font_size: '16sp'
+                    size_hint_y: None
+                    height: dp(50)
+                    on_release: app.connect(root.pkey)
+                OutlineButton:
+                    text: 'Поделиться'
+                    size_hint_y: None
+                    height: dp(48)
+                    on_release: app.share(root.pkey)
+                OutlineButton:
+                    text: 'Скопировать ссылку'
+                    size_hint_y: None
+                    height: dp(48)
+                    on_release: app.copy_link(root.pkey)
+                TextButton:
+                    text: 'Проверяем…' if root.checking else 'Проверить ещё раз'
+                    disabled: root.checking
+                    size_hint_y: None
+                    height: dp(48)
+                    on_release: app.recheck(root.pkey)
+
+
+# ---------- корень ----------
+
+RootView:
+    ScreenManager:
+        id: sm
+        transition: SlideTransition(duration=0.2)
+        ListScreen:
+            id: list_screen
+            name: 'list'
+        DetailScreen:
+            id: detail_screen
+            name: 'detail'
+    Toast:
+        id: toast
+        opacity: 0
+        pos_hint: {'center_x': 0.5, 'y': 0.05}
