@@ -29,6 +29,14 @@ android.archs = arm64-v8a, armeabi-v7a
 android.accept_sdk_license = True
 android.allow_backup = True
 
+# Проверенная связка версий: python-for-android v2024.01.21 + NDK 25b
+# (на телефоне Python 3.11, Kivy 2.3.0, сборка через Cython 0.29).
+# Без этих строк buildozer берёт самую свежую python-for-android
+# (Python 3.14 и NDK 28c), и Kivy 2.3.0 с ней не собирается.
+# На GitHub workflow сам скачивает эту версию и подставляет p4a.source_dir.
+p4a.branch = v2024.01.21
+android.ndk = 25b
+
 [buildozer]
 log_level = 2
 warn_on_root = 1
