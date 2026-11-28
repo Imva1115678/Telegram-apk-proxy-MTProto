@@ -1,0 +1,1814 @@
+{
+ "version": 1,
+ "updated": "2026-11-28T07:48:01Z",
+ "updated_ts": 1795852081,
+ "checked": 492,
+ "working": 466,
+ "sources": [
+  "https://raw.githubusercontent.com/SoliSpirit/mtproto/master/all_proxies.txt",
+  "https://raw.githubusercontent.com/ALIILAPRO/MTProtoProxy/main/mtproto.txt",
+  "https://raw.githubusercontent.com/Grim1313/mtproto-for-telegram/master/all_proxies.txt"
+ ],
+ "proxies": [
+  {
+   "server": "37.49.229.43",
+   "port": 8443,
+   "secret": "dd71889eb517157210d61df330a5f11d95",
+   "ping_ms": 104
+  },
+  {
+   "server": "web.server-space52.info",
+   "port": 443,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 106
+  },
+  {
+   "server": "91.234.147.28",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 107
+  },
+  {
+   "server": "server63.server-space52.info",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 108
+  },
+  {
+   "server": "server83.server-space52.info",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 109
+  },
+  {
+   "server": "212.108.98.5",
+   "port": 443,
+   "secret": "dd1603010200010001fc030386e24c3add",
+   "ping_ms": 109
+  },
+  {
+   "server": "91.234.147.26",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 109
+  },
+  {
+   "server": "91.234.147.18",
+   "port": 443,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 110
+  },
+  {
+   "server": "ir-immortals.sponsorafuture.co.uk",
+   "port": 443,
+   "secret": "104462821249bd7ac519130220c8dd09",
+   "ping_ms": 110
+  },
+  {
+   "server": "cdn.divpal.com",
+   "port": 8443,
+   "secret": "dd71889eb517157210d61df330a5f11d95",
+   "ping_ms": 111
+  },
+  {
+   "server": "server1.server-space52.info",
+   "port": 443,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 111
+  },
+  {
+   "server": "s3.server-space52.info",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 111
+  },
+  {
+   "server": "server63.esantion.info",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 111
+  },
+  {
+   "server": "91.234.147.28",
+   "port": 443,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 112
+  },
+  {
+   "server": "s1.server-space52.info",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 112
+  },
+  {
+   "server": "85.133.194.5",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 112
+  },
+  {
+   "server": "s2.server-space52.info",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 112
+  },
+  {
+   "server": "lol-lock.godserver52.info",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 112
+  },
+  {
+   "server": "91.234.147.37",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 113
+  },
+  {
+   "server": "iranmaster29.suser.ir",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 113
+  },
+  {
+   "server": "server2.server-space52.info",
+   "port": 443,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 114
+  },
+  {
+   "server": "91.234.147.30",
+   "port": 443,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 114
+  },
+  {
+   "server": "api.esantion.info",
+   "port": 443,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 115
+  },
+  {
+   "server": "91.221.191.138",
+   "port": 443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 115
+  },
+  {
+   "server": "dpi.server-space52.info",
+   "port": 443,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 115
+  },
+  {
+   "server": "server93.server-space52.info",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 115
+  },
+  {
+   "server": "91.234.147.33",
+   "port": 443,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 115
+  },
+  {
+   "server": "91.234.147.33",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 115
+  },
+  {
+   "server": "45.43.92.149",
+   "port": 443,
+   "secret": "dd91e22862830fa52c8ccba7309574af6b",
+   "ping_ms": 115
+  },
+  {
+   "server": "baba.ir.osahflahyev.info",
+   "port": 7443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 115
+  },
+  {
+   "server": "91.234.147.26",
+   "port": 443,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 116
+  },
+  {
+   "server": "176.65.151.68",
+   "port": 443,
+   "secret": "dd27729feca8dbcd8008c3fa4f12d92793",
+   "ping_ms": 116
+  },
+  {
+   "server": "you.mf.7f.li.6.5nb.ir",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 116
+  },
+  {
+   "server": "95.179.255.101",
+   "port": 443,
+   "secret": "ee7a6047adf345e77b0fcb75c92485211a7777772e6d6f7a696c6c612e6f7267",
+   "ping_ms": 117
+  },
+  {
+   "server": "dpi.esantion.info",
+   "port": 443,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 118
+  },
+  {
+   "server": "name.golgoli2.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 118
+  },
+  {
+   "server": "a1.anotelinopalk.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 118
+  },
+  {
+   "server": "perfect.lavazem3.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 118
+  },
+  {
+   "server": "ww.hu.or.ge.j.dl.4.4fk.ir",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 118
+  },
+  {
+   "server": "tech.gooodrat.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 118
+  },
+  {
+   "server": "shopify.appnormoor.info",
+   "port": 443,
+   "secret": "dd27729feca8dbcd8008c3fa4f12d92793",
+   "ping_ms": 119
+  },
+  {
+   "server": "persian.gulf.ir.olsjddhf.info",
+   "port": 88,
+   "secret": "ee0000f00f0f775555fffffff5006e2e696d656469612e737465616d706f77657265642e636f6d",
+   "ping_ms": 119
+  },
+  {
+   "server": "craft.malavanann.co.uk",
+   "port": 2083,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 119
+  },
+  {
+   "server": "plus.khorshid.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 119
+  },
+  {
+   "server": "bos.bos.be.la.b.et.68-309-27-46.ir",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 119
+  },
+  {
+   "server": "server83.esantion.info",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 120
+  },
+  {
+   "server": "87.248.144.153",
+   "port": 8880,
+   "secret": "dd79e344818749bd7ac519130220c25d09",
+   "ping_ms": 120
+  },
+  {
+   "server": "iro.varfootball2.co.uk",
+   "port": 2053,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 120
+  },
+  {
+   "server": "org.mediaad.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 120
+  },
+  {
+   "server": "aptupdate.appnormoor.info",
+   "port": 443,
+   "secret": "dd27729feca8dbcd8008c3fa4f12d92793",
+   "ping_ms": 121
+  },
+  {
+   "server": "chat.appnormoor.online",
+   "port": 443,
+   "secret": "dd27729feca8dbcd8008c3fa4f12d92793",
+   "ping_ms": 121
+  },
+  {
+   "server": "day.lavazem4.co.uk",
+   "port": 2053,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 121
+  },
+  {
+   "server": "round.fekr.co.uk",
+   "port": 2083,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 121
+  },
+  {
+   "server": "ariobarzanes.ir.igakwvwa.info",
+   "port": 7443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 122
+  },
+  {
+   "server": "194.120.230.37",
+   "port": 443,
+   "secret": "dd79e7010200010007f0030386e24c3add",
+   "ping_ms": 122
+  },
+  {
+   "server": "85.133.200.41",
+   "port": 8880,
+   "secret": "dd79e344818749bd7ac519130220c25d09",
+   "ping_ms": 122
+  },
+  {
+   "server": "shish.torob.ir.solzairanbad.ir",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 122
+  },
+  {
+   "server": "85.133.199.21",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 122
+  },
+  {
+   "server": "api.mangoseason5.co.uk",
+   "port": 2053,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 122
+  },
+  {
+   "server": "max.kimt.click",
+   "port": 443,
+   "secret": "ee1b153cf06dbd43c6085c359a6702eb936d61782e6b696d742e636c69636b",
+   "ping_ms": 122
+  },
+  {
+   "server": "87.248.144.249",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 123
+  },
+  {
+   "server": "great.cipservice.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 123
+  },
+  {
+   "server": "sudosu.appnormoor.info",
+   "port": 443,
+   "secret": "dd27729feca8dbcd8008c3fa4f12d92793",
+   "ping_ms": 123
+  },
+  {
+   "server": "new.nikkhah.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 123
+  },
+  {
+   "server": "87.248.144.253",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 123
+  },
+  {
+   "server": "co.uk.ge.pd.nt.k.e.78.44-207-58.ir",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 123
+  },
+  {
+   "server": "103.161.35.56",
+   "port": 443,
+   "secret": "dd79e7010200010007f0030386e24c3add",
+   "ping_ms": 123
+  },
+  {
+   "server": "no-problem.ir.aojsnqzcdsc.info",
+   "port": 88,
+   "secret": "ee0000f00f0f775555fffffff5006e2e69626973636f7474692e79656b74616e65742e636f6d",
+   "ping_ms": 124
+  },
+  {
+   "server": "star.talebi.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 124
+  },
+  {
+   "server": "85.133.200.11",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 124
+  },
+  {
+   "server": "87.248.144.60",
+   "port": 2053,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 124
+  },
+  {
+   "server": "best.ir.agrescjarkahdgs.info",
+   "port": 88,
+   "secret": "ee0000f00f0f775555fffffff5006e2e6961626364656667682e696a",
+   "ping_ms": 124
+  },
+  {
+   "server": "hadi-choopan.persian.wolf.ir.aojsnqzcdsc.info",
+   "port": 88,
+   "secret": "ee0000f00f0f775555fffffff5006e2e69626973636f7474692e79656b74616e65742e636f6d",
+   "ping_ms": 124
+  },
+  {
+   "server": "87.248.144.156",
+   "port": 8880,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 124
+  },
+  {
+   "server": "ams2.tlgfast.com",
+   "port": 443,
+   "secret": "ee2a4905e52c0b5fa1b009ec835de0e9b6616d73322e746c67666173742e636f6d",
+   "ping_ms": 125
+  },
+  {
+   "server": "pro.khoorshid.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 125
+  },
+  {
+   "server": "fruit.golgoli2.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 125
+  },
+  {
+   "server": "ir.mediaad.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 125
+  },
+  {
+   "server": "85.133.200.45",
+   "port": 8880,
+   "secret": "dd1603010200010001fc030386e24c3add",
+   "ping_ms": 125
+  },
+  {
+   "server": "se.anotelinopalk.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 125
+  },
+  {
+   "server": "87.248.144.167",
+   "port": 8880,
+   "secret": "dd1603010200010001fc030386e24c3add",
+   "ping_ms": 125
+  },
+  {
+   "server": "do.goodrat.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 125
+  },
+  {
+   "server": "afkar.lavazem1.co.uk",
+   "port": 2053,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 125
+  },
+  {
+   "server": "do.ionox.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 125
+  },
+  {
+   "server": "ghasam-be-shab.hosiyaman.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 125
+  },
+  {
+   "server": "silver.ciaude.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 126
+  },
+  {
+   "server": "shoes.golgoli2.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 126
+  },
+  {
+   "server": "do.torob.ir.solzairanbad.ir",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 126
+  },
+  {
+   "server": "irogallery.golgoli1.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 126
+  },
+  {
+   "server": "run.golgoli2.co.uk",
+   "port": 2053,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 126
+  },
+  {
+   "server": "winter.lavazem2.co.uk",
+   "port": 2053,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 126
+  },
+  {
+   "server": "banoo.khooorshid.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 126
+  },
+  {
+   "server": "tigo8.hasanto.ir",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 126
+  },
+  {
+   "server": "85.133.199.22",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 127
+  },
+  {
+   "server": "noh.ionox.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 127
+  },
+  {
+   "server": "hadaf.golgoli2.co.uk",
+   "port": 2053,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 127
+  },
+  {
+   "server": "sq.oy.8v.9m.f.f6.6ld.ir",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 127
+  },
+  {
+   "server": "zendebad.damavand.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 127
+  },
+  {
+   "server": "87.248.144.157",
+   "port": 8880,
+   "secret": "dd1603010200010001fc030386e24c3add",
+   "ping_ms": 127
+  },
+  {
+   "server": "194.120.230.40",
+   "port": 443,
+   "secret": "dd79e7010200010007f0030386e24c3add",
+   "ping_ms": 128
+  },
+  {
+   "server": "faq.slamawna.info",
+   "port": 444,
+   "secret": "dd41b712fe12019c64e281bcb6aeccded7",
+   "ping_ms": 128
+  },
+  {
+   "server": "83.243.86.210",
+   "port": 7443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 128
+  },
+  {
+   "server": "85.133.199.20",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 128
+  },
+  {
+   "server": "87.248.144.50",
+   "port": 2083,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 128
+  },
+  {
+   "server": "tg.getrocket.me",
+   "port": 443,
+   "secret": "eef84b5bf22712eba2c12b8c0582237add74672e676574726f636b65742e6d65",
+   "ping_ms": 128
+  },
+  {
+   "server": "pnj.ionox.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 128
+  },
+  {
+   "server": "yek.ionox.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 128
+  },
+  {
+   "server": "chat.appnormoor.info",
+   "port": 443,
+   "secret": "dd27729feca8dbcd8008c3fa4f12d92793",
+   "ping_ms": 128
+  },
+  {
+   "server": "benze-benz.ir.osahflahyev.info",
+   "port": 7443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 128
+  },
+  {
+   "server": "go.xi.yx.m.e4.88.387-44qavi.ir",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 128
+  },
+  {
+   "server": "philadelphia.hezarto.info",
+   "port": 5500,
+   "secret": "ec742282124f04d318551341ead76457",
+   "ping_ms": 128
+  },
+  {
+   "server": "85.133.200.50",
+   "port": 8880,
+   "secret": "dd1603010200010001fc030386e24c3add",
+   "ping_ms": 129
+  },
+  {
+   "server": "48.mt.p6.fo.s.u.44-94-14-4.ir",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 129
+  },
+  {
+   "server": "hash.torob.ir.solzairanbad.ir",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 129
+  },
+  {
+   "server": "do.anotelinopalk.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 129
+  },
+  {
+   "server": "yek.anotelinopalk.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 129
+  },
+  {
+   "server": "85.133.200.49",
+   "port": 8880,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 129
+  },
+  {
+   "server": "char.ionox.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 129
+  },
+  {
+   "server": "silnet.varfootball.co.uk",
+   "port": 2053,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 129
+  },
+  {
+   "server": "ipv6.dablecheckz.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 129
+  },
+  {
+   "server": "3621.mmd1.meli-n12.info",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 129
+  },
+  {
+   "server": "point-to-point.dablecheckz.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 129
+  },
+  {
+   "server": "49.13.59.213",
+   "port": 8443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 129
+  },
+  {
+   "server": "dah.torob.ir.solzairanbad.ir",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 130
+  },
+  {
+   "server": "87.248.144.92",
+   "port": 2053,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 130
+  },
+  {
+   "server": "85.133.200.47",
+   "port": 8880,
+   "secret": "dd1603010200010001fc030386e24c3add",
+   "ping_ms": 130
+  },
+  {
+   "server": "haf.torob.ir.solzairanbad.ir",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 130
+  },
+  {
+   "server": "2y.kr.8v.lr.f.ir.75.44.38-82.ir",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 130
+  },
+  {
+   "server": "radical.pushinero.info",
+   "port": 5500,
+   "secret": "d88db99ee3721f0fcb40a4ff63b5cd28",
+   "ping_ms": 130
+  },
+  {
+   "server": "169.58.220.25",
+   "port": 443,
+   "secret": "ee111111111111111111111111111111",
+   "ping_ms": 130
+  },
+  {
+   "server": "digi.golgoli2.co.uk",
+   "port": 2096,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 130
+  },
+  {
+   "server": "ir-ir-ir.grumpyoldmen.info",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c8dd09",
+   "ping_ms": 130
+  },
+  {
+   "server": "bi-bakm.37-100jamal.ir",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 130
+  },
+  {
+   "server": "boom.zovqim.ir",
+   "port": 443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 130
+  },
+  {
+   "server": "darkdept.store",
+   "port": 8443,
+   "secret": "ee4cdc677c2048afa846136f4a70c05e827777772e6461726b646570742e73746f7265",
+   "ping_ms": 130
+  },
+  {
+   "server": "ving.mozitop.co.uk",
+   "port": 8443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 130
+  },
+  {
+   "server": "94.184.39.151",
+   "port": 443,
+   "secret": "ddf0eeb0bd9adc4fd4a93994ee3b2a216b",
+   "ping_ms": 131
+  },
+  {
+   "server": "pnj.anotelinopalk.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 131
+  },
+  {
+   "server": "wood.kufrel.ir",
+   "port": 443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 131
+  },
+  {
+   "server": "ir-ir.naganuma.info",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c8dd09",
+   "ping_ms": 131
+  },
+  {
+   "server": "116.202.246.219",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 131
+  },
+  {
+   "server": "qamginm-sp.37-100jamal.ir",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 131
+  },
+  {
+   "server": "ir.xn--ds-bja.info",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c8dd09",
+   "ping_ms": 131
+  },
+  {
+   "server": "17fh.masi.ir.he6fhd.ru",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 131
+  },
+  {
+   "server": "ir.closcloud.co.uk",
+   "port": 8443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 131
+  },
+  {
+   "server": "whatsyourname.laniva.ir",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 131
+  },
+  {
+   "server": "sudoaptupdate-y-sudoaptupgrade-y.logmanfi.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 131
+  },
+  {
+   "server": "server3.esantion.info",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 132
+  },
+  {
+   "server": "87.248.144.152",
+   "port": 8880,
+   "secret": "dd1603010200010001fc030386e24c3add",
+   "ping_ms": 132
+  },
+  {
+   "server": "85.133.200.44",
+   "port": 8880,
+   "secret": "dd1603010200010001fc030386e24c3add",
+   "ping_ms": 132
+  },
+  {
+   "server": "85.133.200.13",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 132
+  },
+  {
+   "server": "pnj.torob.ir.solzairanbad.ir",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 132
+  },
+  {
+   "server": "api-keys.azadaiu.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 132
+  },
+  {
+   "server": "jodaee-tv.0-1-2-1.ir",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 132
+  },
+  {
+   "server": "professor.hasratepaeiz.website",
+   "port": 7070,
+   "secret": "88e462779949db7ec888130660c40c77",
+   "ping_ms": 132
+  },
+  {
+   "server": "37.114.37.93",
+   "port": 443,
+   "secret": "ee100bf723c989ac93cf96a44e108fe87e6769746875622e636f6d",
+   "ping_ms": 132
+  },
+  {
+   "server": "payer.dablecheckz.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 132
+  },
+  {
+   "server": "for.you.goooalir.co.uk",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 132
+  },
+  {
+   "server": "ir-ir.grumpyoldmen.info",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c8dd09",
+   "ping_ms": 132
+  },
+  {
+   "server": "a4.anotelinopalk.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 133
+  },
+  {
+   "server": "85.133.200.12",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 133
+  },
+  {
+   "server": "hasht.ionox.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 133
+  },
+  {
+   "server": "shsh.anotelinopalk.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 133
+  },
+  {
+   "server": "node3.serverix.cloud",
+   "port": 3252,
+   "secret": "ee511203dfda7df167a06c0b772e12018e7777772e676f6f676c652e636f6d",
+   "ping_ms": 133
+  },
+  {
+   "server": "rond-hamrahaval.ebimarh.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 133
+  },
+  {
+   "server": "d1.jadroom.co.uk",
+   "port": 443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 133
+  },
+  {
+   "server": "my.fastprx.co.uk",
+   "port": 2052,
+   "secret": "aea1191522c9b281d2633610a34e730d",
+   "ping_ms": 133
+  },
+  {
+   "server": "comback-all.hosiyaman.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 133
+  },
+  {
+   "server": "188.245.118.216",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 133
+  },
+  {
+   "server": "worldmaster.varomax.co.uk",
+   "port": 5500,
+   "secret": "79e462833349bd7ac519130220c25d10",
+   "ping_ms": 133
+  },
+  {
+   "server": "162.55.45.247",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 133
+  },
+  {
+   "server": "87.248.144.155",
+   "port": 8880,
+   "secret": "dd1603010200010001fc030386e24c3add",
+   "ping_ms": 134
+  },
+  {
+   "server": "46.225.253.114",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 134
+  },
+  {
+   "server": "torobchesho.co.uk",
+   "port": 443,
+   "secret": "ee5f7ce28a2c4816c6c923dfd4d5630e01746f726f6263686573686f2e636f2e756b",
+   "ping_ms": 134
+  },
+  {
+   "server": "91.107.155.20",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 134
+  },
+  {
+   "server": "pro-evolution-soccer.ferdosisets.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 134
+  },
+  {
+   "server": "177.202.67.229",
+   "port": 443,
+   "secret": "ee59e09347d9a61afe7dfaa53d46d55bfd646576656c6f7065722e6e76696469612e636f6d",
+   "ping_ms": 134
+  },
+  {
+   "server": "dastan.sarnevesht.space",
+   "port": 443,
+   "secret": "10400103324995b07c030386e886e7f1",
+   "ping_ms": 134
+  },
+  {
+   "server": "ir-ir.gnutella2.info",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c8dd09",
+   "ping_ms": 134
+  },
+  {
+   "server": "xxmatrixx.top",
+   "port": 853,
+   "secret": "eee4508d288bf81791177a2f5e73ac06cf6d617472697878782e746f70",
+   "ping_ms": 134
+  },
+  {
+   "server": "j4y7nf.ir.meli-n13.info",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 134
+  },
+  {
+   "server": "91.107.160.196",
+   "port": 443,
+   "secret": "dd79e7010200010007f0030386e24c3add",
+   "ping_ms": 134
+  },
+  {
+   "server": "61.new1.ramkal12.uk",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 134
+  },
+  {
+   "server": "daryapiano.ir",
+   "port": 8443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 134
+  },
+  {
+   "server": "91.221.190.198",
+   "port": 443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 135
+  },
+  {
+   "server": "87.248.144.158",
+   "port": 8880,
+   "secret": "dd79e344818749bd7ac519130220c25d09",
+   "ping_ms": 135
+  },
+  {
+   "server": "se.ionox.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 135
+  },
+  {
+   "server": "212.118.53.195",
+   "port": 443,
+   "secret": "dd4482437e89f9af8929514eee7faaf61f",
+   "ping_ms": 135
+  },
+  {
+   "server": "ir-ir.mhanna.info",
+   "port": 3443,
+   "secret": "104462821249bd7ac519130220c8dd09",
+   "ping_ms": 135
+  },
+  {
+   "server": "syntax.azadaiu.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 135
+  },
+  {
+   "server": "shish.ionox.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 135
+  },
+  {
+   "server": "khosh-khande.lolauth.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 135
+  },
+  {
+   "server": "box-to-box.dablecheckz.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 135
+  },
+  {
+   "server": "old.graduat.co.uk",
+   "port": 8443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 136
+  },
+  {
+   "server": "math-test.bypased.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 136
+  },
+  {
+   "server": "88.99.211.3",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 136
+  },
+  {
+   "server": "ir-mainland.steveharrop.co.uk",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c8dd09",
+   "ping_ms": 136
+  },
+  {
+   "server": "termsnal.co.uk",
+   "port": 8443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 136
+  },
+  {
+   "server": "79.137.196.223",
+   "port": 15443,
+   "secret": "ee5d739d0cab70b86961816e3a9c27d4c17777772e636c6f7564666c6172652e636f6d",
+   "ping_ms": 136
+  },
+  {
+   "server": "we.antony-gordon.co.uk",
+   "port": 8443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 136
+  },
+  {
+   "server": "maman.ir.osahflahyev.info",
+   "port": 7443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 137
+  },
+  {
+   "server": "87.248.144.154",
+   "port": 8880,
+   "secret": "dd79e344818749bd7ac519130220c25d09",
+   "ping_ms": 137
+  },
+  {
+   "server": "87.248.144.159",
+   "port": 8880,
+   "secret": "dd1603010200010001fc030386e24c3add",
+   "ping_ms": 137
+  },
+  {
+   "server": "jhndoes.co.uk",
+   "port": 8443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 137
+  },
+  {
+   "server": "you.pelastic.co.uk",
+   "port": 443,
+   "secret": "ddc3b375786a3b9630e44cf87d2033a441",
+   "ping_ms": 137
+  },
+  {
+   "server": "edge.turboass.live",
+   "port": 443,
+   "secret": "ee51116f4018a2b3dfc9bda286c52afe9f656467652e747572626f6173732e6c697665",
+   "ping_ms": 137
+  },
+  {
+   "server": "ir-neverland.nowhearthis.co.uk",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c8dd09",
+   "ping_ms": 137
+  },
+  {
+   "server": "21.mmd1.meli-n12.info",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 137
+  },
+  {
+   "server": "masachoset.rah-toro-mikhanad.info",
+   "port": 9988,
+   "secret": "e8742282124f08d358551341ead76402",
+   "ping_ms": 137
+  },
+  {
+   "server": "188.245.113.107",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 137
+  },
+  {
+   "server": "85.133.200.46",
+   "port": 8880,
+   "secret": "dd1603010200010001fc030386e24c3add",
+   "ping_ms": 138
+  },
+  {
+   "server": "91.107.150.42",
+   "port": 8443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 138
+  },
+  {
+   "server": "static.b-telega.shop",
+   "port": 443,
+   "secret": "ee9a3f90be73d8392fd072f9860a2699de7374617469632e622d74656c6567612e73686f70",
+   "ping_ms": 138
+  },
+  {
+   "server": "puot.mozitop.co.uk",
+   "port": 8443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 138
+  },
+  {
+   "server": "91.107.170.11",
+   "port": 8443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 138
+  },
+  {
+   "server": "94.130.94.122",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 138
+  },
+  {
+   "server": "188.40.68.169",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 138
+  },
+  {
+   "server": "storagexx.space",
+   "port": 443,
+   "secret": "ee24b61556a3ec49bc0c7a5a7e8525702873746f7261676578782e7370616365",
+   "ping_ms": 138
+  },
+  {
+   "server": "strong.hosiyaman.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 138
+  },
+  {
+   "server": "jy7nf.ir.meli-n13.info",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 138
+  },
+  {
+   "server": "char.torob.ir.solzairanbad.ir",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 139
+  },
+  {
+   "server": "khare-gol.golabkashan.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 139
+  },
+  {
+   "server": "kaktos.mrdatac.ir",
+   "port": 5500,
+   "secret": "e8742282124f08d358551341ead76402",
+   "ping_ms": 139
+  },
+  {
+   "server": "checker-mizban.dablecheckz.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 139
+  },
+  {
+   "server": "web.cocorichmond.site",
+   "port": 8880,
+   "secret": "e8742282124f08d358551341ead76402",
+   "ping_ms": 139
+  },
+  {
+   "server": "meshki.goooalir.co.uk",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 139
+  },
+  {
+   "server": "79.137.196.223",
+   "port": 443,
+   "secret": "eeee525b778775d1c3b1e2beb8af08e2017777772e636c6f7564666c6172652e636f6d",
+   "ping_ms": 139
+  },
+  {
+   "server": "dah.ionox.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 139
+  },
+  {
+   "server": "88.99.211.15",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 139
+  },
+  {
+   "server": "79.137.196.223",
+   "port": 14443,
+   "secret": "ee9e28cf588967add684c5e759fea036d47777772e636c6f7564666c6172652e636f6d",
+   "ping_ms": 139
+  },
+  {
+   "server": "leomessi.goooalir.co.uk",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 139
+  },
+  {
+   "server": "one.rozinalpoku.co.uk",
+   "port": 443,
+   "secret": "ee1603010200010001fc030386e24c3add6f6e652e726f7a696e616c706f6b752e636f2e756b",
+   "ping_ms": 140
+  },
+  {
+   "server": "opss.anotelinopalk.co.uk",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 140
+  },
+  {
+   "server": "194.146.12.253",
+   "port": 8443,
+   "secret": "ee4cdc677c2048afa846136f4a70c05e827777772e6461726b646570742e73746f7265",
+   "ping_ms": 140
+  },
+  {
+   "server": "avangard.pareporeh.info",
+   "port": 5500,
+   "secret": "ec742282124f04d318551341ead76457",
+   "ping_ms": 140
+  },
+  {
+   "server": "bosbde-behem.0-1-2-1.ir",
+   "port": 2020,
+   "secret": "00000000000000000000000000000000",
+   "ping_ms": 140
+  },
+  {
+   "server": "79.137.196.223",
+   "port": 18443,
+   "secret": "eefd7ec32323aa5b4fc5cdd6b7dd28836a7777772e636c6f7564666c6172652e636f6d",
+   "ping_ms": 140
+  },
+  {
+   "server": "ir-ir.flipme.info",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c8dd09",
+   "ping_ms": 140
+  },
+  {
+   "server": "91.107.152.115",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 141
+  },
+  {
+   "server": "ava.goooalir.co.uk",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 141
+  },
+  {
+   "server": "joje.goooalir.co.uk",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 141
+  },
+  {
+   "server": "narooo.goooalir.co.uk",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 141
+  },
+  {
+   "server": "87.248.129.53",
+   "port": 15,
+   "secret": "ee1603010200010001fc030386e24c3add626973636f7474692e79656b74616e65742e636f6d",
+   "ping_ms": 142
+  },
+  {
+   "server": "91.107.140.144",
+   "port": 443,
+   "secret": "dd79e7010200010007f0030386e24c3add",
+   "ping_ms": 142
+  },
+  {
+   "server": "ir-ir.rebol.info",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c8dd09",
+   "ping_ms": 142
+  },
+  {
+   "server": "ipv4.dablecheckz.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 142
+  },
+  {
+   "server": "168.119.142.46",
+   "port": 443,
+   "secret": "dd79e7010200010007f0030386e24c3add",
+   "ping_ms": 142
+  },
+  {
+   "server": "144.31.214.17",
+   "port": 12443,
+   "secret": "ee58aba87ec920b3890dd18ebf4ec5bf4c6672312e616e6b6f76706e2e6f6e6c696e65",
+   "ping_ms": 142
+  },
+  {
+   "server": "731.masi.ir.he6fhd.ru",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 142
+  },
+  {
+   "server": "dns.speed-benz.co.uk",
+   "port": 8443,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 143
+  },
+  {
+   "server": "bookmook.hichibehichi-co.info",
+   "port": 2882,
+   "secret": "dd10400103324995b07c030386e886e7f1",
+   "ping_ms": 143
+  },
+  {
+   "server": "79.137.196.223",
+   "port": 19443,
+   "secret": "ee34faea79631cc8b7b884a3d513857e7b7777772e636c6f7564666c6172652e636f6d",
+   "ping_ms": 143
+  },
+  {
+   "server": "148.251.77.157",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 143
+  },
+  {
+   "server": "188.40.68.147",
+   "port": 8443,
+   "secret": "104462821249bd7ac519130220c25d09",
+   "ping_ms": 143
+  },
+  {
+   "server": "company.ferdosisets.info",
+   "port": 8443,
+   "secret": "1603010200010001fc030386e24c3add",
+   "ping_ms": 143
+  },
+  {
+   "server": "79.137.196.223",
+   "port": 21443,
+   "secret": "ee70d02df07ecb5669b6eb010aba55eab07777772e636c6f7564666c6172652e636f6d",
+   "ping_ms": 143
+  },
+  {
+   "server": "cr777.goooalir.co.uk",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 143
+  },
+  {
+   "server": "79.137.196.223",
+   "port": 9443,
+   "secret": "eeeed3431eaef666469f9beb5286a544d96f7777772e636c6f7564666c6172652e636f6d",
+   "ping_ms": 143
+  },
+  {
+   "server": "sefid.goooalir.co.uk",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 143
+  },
+  {
+   "server": "87.248.144.151",
+   "port": 8880,
+   "secret": "dd1603010200010001fc030386e24c3add",
+   "ping_ms": 144
+  },
+  {
+   "server": "noh.torob.ir.solzairanbad.ir",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 144
+  },
+  {
+   "server": "79.137.196.223",
+   "port": 20443,
+   "secret": "ee19cebd24e6780701cc9839053c6da7677777772e636c6f7564666c6172652e636f6d",
+   "ping_ms": 144
+  },
+  {
+   "server": "azadi.goooalir.co.uk",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 144
+  },
+  {
+   "server": "178.104.214.47",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 144
+  },
+  {
+   "server": "79.137.196.223",
+   "port": 2053,
+   "secret": "eeee1701dff011da0ee1313d584fc565187777772e636c6f7564666c6172652e636f6d",
+   "ping_ms": 144
+  },
+  {
+   "server": "79.137.196.223",
+   "port": 8443,
+   "secret": "eeeeacd334a255675ccc880cb6b8c9caf07777772e636c6f7564666c6172652e636f6d",
+   "ping_ms": 144
+  },
+  {
+   "server": "se.torob.ir.solzairanbad.ir",
+   "port": 8880,
+   "secret": "79e344818749bd7ac519130220c25d09",
+   "ping_ms": 145
+  },
+  {
+   "server": "236f1.mmd1.meli-n12.info",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 145
+  },
+  {
+   "server": "fable.kelpmoor.xyz",
+   "port": 8443,
+   "secret": "ee6fcf868535df2309ee2f6ea5a6563ef9706574726f766963682e7275",
+   "ping_ms": 145
+  },
+  {
+   "server": "79.137.196.223",
+   "port": 4443,
+   "secret": "eeee4026e99e99216664b0cb156da676d7707777772e636c6f7564666c6172652e636f6d",
+   "ping_ms": 146
+  },
+  {
+   "server": "baran.goooalir.co.uk",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 146
+  },
+  {
+   "server": "orbit.telehelp.top",
+   "port": 443,
+   "secret": "eeca42440ff53ac80d54a90cdad584e47f64726976652e676f6f676c652e636f6d",
+   "ping_ms": 146
+  },
+  {
+   "server": "neon.tealbriar.xyz",
+   "port": 8443,
+   "secret": "ee7809adb838f02953d8f53df91d2e4b35706574726f766963682e7275",
+   "ping_ms": 146
+  },
+  {
+   "server": "valley.paperteapot.com",
+   "port": 443,
+   "secret": "eed09fb30e9ba945e3eb272875413c8c9476616c6c65792e7061706572746561706f742e636f6d",
+   "ping_ms": 146
+  },
+  {
+   "server": "dew.ashwren.xyz",
+   "port": 443,
+   "secret": "ee6fcf868535df2309ee2f6ea5a6563ef9786170692e6f7a6f6e2e7275",
+   "ping_ms": 146
+  },
+  {
+   "server": "breeze.velvetwindow.cc",
+   "port": 443,
+   "secret": "eed09fb30e9ba945e3eb272875413c8c94627265657a652e76656c76657477696e646f772e6363",
+   "ping_ms": 146
+  },
+  {
+   "server": "soh5.goooalir.co.uk",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 146
+  },
+  {
+   "server": "soheil.goooalir.co.uk",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 147
+  },
+  {
+   "server": "clover.lite64.xyz",
+   "port": 443,
+   "secret": "ee0e2327b9decafd82d7ea2050f293458d6c69746536342e73697465",
+   "ping_ms": 147
+  },
+  {
+   "server": "nyne50.sorrelbay.xyz",
+   "port": 443,
+   "secret": "ee302cabde68f0b8c57ca48b73072cd276786170692e6f7a6f6e2e7275",
+   "ping_ms": 147
+  },
+  {
+   "server": "pebble.velvetwindow.cc",
+   "port": 443,
+   "secret": "eed09fb30e9ba945e3eb272875413c8c94706562626c652e76656c76657477696e646f772e6363",
+   "ping_ms": 147
+  },
+  {
+   "server": "razo11.kelpmoor.xyz",
+   "port": 8443,
+   "secret": "eeebf9726b89cc8ca940357d833f491a04706574726f766963682e7275",
+   "ping_ms": 147
+  },
+  {
+   "server": "88.99.59.187",
+   "port": 8443,
+   "secret": "dd104462821249bd7ac519130220c25d09",
+   "ping_ms": 148
+  },
+  {
+   "server": "lightmeadow.sorrelbay.xyz",
+   "port": 443,
+   "secret": "ee4744890f29a9d82cf4673d7fed152ea06f7a6f6e2e7275",
+   "ping_ms": 148
+  },
+  {
+   "server": "dele89.quillmarsh.xyz",
+   "port": 8443,
+   "secret": "ee704c9352bad79b00f1e067772277715664726976652e676f6f676c652e636f6d",
+   "ping_ms": 148
+  },
+  {
+   "server": "gaga93.copperwren.click",
+   "port": 8443,
+   "secret": "eeb5b747703e5e5ce6bf2c234105f89c7964726976652e676f6f676c652e636f6d",
+   "ping_ms": 148
+  },
+  {
+   "server": "gardenkite.heronglade.space",
+   "port": 443,
+   "secret": "ee4b20619b99880640b45f275c18e20555706574726f766963682e7275",
+   "ping_ms": 149
+  },
+  {
+   "server": "dunelumen.velvetwindow.cc",
+   "port": 443,
+   "secret": "eed09fb30e9ba945e3eb272875413c8c9464756e656c756d656e2e76656c76657477696e646f772e6363",
+   "ping_ms": 149
+  },
+  {
+   "server": "maraka16.ashwren.xyz",
+   "port": 443,
+   "secret": "ee912defad667a620d66dbf5fd0b2a1bcc62726f777365722e79616e6465782e7275",
+   "ping_ms": 149
+  },
+  {
+   "server": "ottercedar.velvetwindow.cc",
+   "port": 443,
+   "secret": "eed09fb30e9ba945e3eb272875413c8c946f7474657263656461722e76656c76657477696e646f772e6363",
+   "ping_ms": 149
+  },
+  {
+   "server": "sun.paperteapot.com",
+   "port": 443,
+   "secret": "eed09fb30e9ba945e3eb272875413c8c9473756e2e7061706572746561706f742e636f6d",
+   "ping_ms": 150
+  },
+  {
+   "server": "light.paperteapot.com",
+   "port": 443,
+   "secret": "eed09fb30e9ba945e3eb272875413c8c946c696768742e7061706572746561706f742e636f6d",
+   "ping_ms": 150
+  },
+  {
+   "server": "dune.velvetwindow.cc",
+   "port": 443,
+   "secret": "eed09fb30e9ba945e3eb272875413c8c9464756e652e76656c76657477696e646f772e6363",
+   "ping_ms": 150
+  },
+  {
+   "server": "mile20.sorrelbay.xyz",
+   "port": 8443,
+   "secret": "eee1d528d13649f8288c1ea7898787b486786170692e6f7a6f6e2e7275",
+   "ping_ms": 150
+  },
+  {
+   "server": "citrus.velvetwindow.cc",
+   "port": 443,
+   "secret": "eed09fb30e9ba945e3eb272875413c8c946369747275732e76656c76657477696e646f772e6363",
+   "ping_ms": 150
+  },
+  {
+   "server": "kite.heronglade.space",
+   "port": 443,
+   "secret": "eef34d88320a4d0b6e8aaf11541681dd7c706574726f766963682e7275",
+   "ping_ms": 150
+  },
+  {
+   "server": "azure.paperteapot.com",
+   "port": 443,
+   "secret": "eed09fb30e9ba945e3eb272875413c8c94617a7572652e7061706572746561706f742e636f6d",
+   "ping_ms": 150
+  },
+  {
+   "server": "birch.velvetwindow.cc",
+   "port": 443,
+   "secret": "eed09fb30e9ba945e3eb272875413c8c9462697263682e76656c76657477696e646f772e6363",
+   "ping_ms": 150
+  },
+  {
+   "server": "pine.heronglade.space",
+   "port": 8443,
+   "secret": "ee4b20619b99880640b45f275c18e20555786170692e6f7a6f6e2e7275",
+   "ping_ms": 150
+  },
+  {
+   "server": "maple.velvetwindow.cc",
+   "port": 443,
+   "secret": "eed09fb30e9ba945e3eb272875413c8c946d61706c652e76656c76657477696e646f772e6363",
+   "ping_ms": 150
+  }
+ ]
+}
